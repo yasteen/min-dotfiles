@@ -1,0 +1,15 @@
+set nocompatible
+syntax on
+
+set mouse=a
+set nu rnu
+set ruler
+set hidden
+
+" Tabs
+set smartindent autoindent
+set expandtab
+set shiftwidth=4
+set tabstop=4
+set backspace=2
+
