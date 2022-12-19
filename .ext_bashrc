@@ -1,6 +1,10 @@
+PATH=$PATH:~/.local/bin
 
 alias rm="rm -i"
 alias mv="mv -i"
+alias python="python3"
+alias vi="nvim --clean"
+alias vim="nvim"
 
 # Configuration git
 alias config="/usr/bin/git --git-dir=$HOME/dotfiles/min-dotfiles/.git --work-tree=$HOME"
