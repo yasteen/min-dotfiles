@@ -6,6 +6,7 @@ lsp.ensure_installed({
   'tsserver',
   'eslint',
   'sumneko_lua',
+  'rust_analyzer',
 })
 
 local cmp = require('cmp')
@@ -31,3 +32,7 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 lsp.setup()
+
+local nvim_command = vim.api.nvim_command
+nvim_command('autocmd CursorHold <buffer> lua vim.diagnostic.open_float({scope="line"})')
+
